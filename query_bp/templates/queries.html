@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запросы</title>
+</head>
+<body>
+<div class="center">
+    <h2>Работа с запросами</h2>
+
+    <p>Выберите необходимый запрос:</p>
+
+    <ul>
+        <li>
+            <a href="{{ url_for('query.call_handler') }}">
+                Поиск начала звонка и объёма по ID
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('query.sub_handler') }}">
+                Данные абонента по номеру телефона
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('query.balance_handler') }}">
+                История изменения баланса по ID абонента и дате
+            </a>
+        </li>
+    </ul>
+
+    <p><a href="{{ url_for('main_menu') }}">В главное меню</a></p>
+</div>
+</body>
+</html>
